@@ -1,2 +1,1 @@
-"# Furniture" 
-sec sec
+"# Furniture"
