@@ -622,7 +622,7 @@ h3 {
 /* Viewport Meta Tag */
 @viewport {
   width: device-width;
-  initial-scale: 1.0;
+  initial-scale: 1;
 }
 
 /* Common styles for all breakpoints */
