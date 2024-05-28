@@ -97,34 +97,30 @@ h3 {
   font-size: 20px;
 }
 .chair-details {
-    list-style: none;
-    margin-bottom: 42px;
-  }
-  
-  .chair-details li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 16px;
-  }
-  
-  .chair-details li:last-child {
-    margin-bottom: 0;
-  }
-  
-  .chair-icon {
-    stroke: #29a396;
-    height: 24px;
-    height: 24px;
-  }
-  
-  .chair-price {
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    align-items: center;
-  }
-  
-  
-  
-  
+  list-style: none;
+  margin-bottom: 42px;
+}
+
+.chair-details li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.chair-details li:last-child {
+  margin-bottom: 0;
+}
+
+.chair-icon {
+  stroke: #29a396;
+  height: 24px;
+  height: 24px;
+}
+
+.chair-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+}
