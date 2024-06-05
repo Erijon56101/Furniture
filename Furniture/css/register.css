@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap");
+
+:root {
+  --clr-primary: #29a396;
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9fafb;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background: radial-gradient(rgba(17, 17, 17, 0.885), #071a1a);
+}
+
+.container {
+  position: relative; /* Added this */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  width: 400px;
+}
+.container,
+.form {
+  background: url(https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/blur-1.png);
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+h2 span {
+  color: #29a396;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  color: #29a396;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #29a396;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: var(--clr-primary);
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 80%;
+  border-radius: 100px;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.form-txt {
+  background-color: #cae9e5;
+}
+
+.btn:hover {
+  background: #165f56;
+  transition: 0.3s linear;
+}
+
+.btn-h {
+  position: absolute; /* Added this */
+  top: 0; /* Added this */
+  left: 0; /* Added this */
+  padding: 10px;
+  margin: 30px; /* Adjusted to add some spacing */
+  font-size: 12px;
+  background-color: #29a396;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 100px;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: #29a396;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 100px;
+}
+.btn:active,
+.btn:hover {
+  background-color: #165f56;
+}
