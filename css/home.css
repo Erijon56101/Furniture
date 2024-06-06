@@ -263,7 +263,7 @@ body {
 .logo-png {
   width: auto;
   height: 50px;
-  animation: rotate 10s linear infinite;
+  animation: rotate 20s linear infinite;
 }
 
 @keyframes jump {
@@ -312,12 +312,24 @@ body {
 }
 
 .visual {
-  width: 40%;
+  width: 60%; /* Increase the width to make the image container larger */
+  height: 50%;
   padding-left: 2%;
 }
 
 .visual img {
+  width: 100%; /* Make the image fill the container */
+}
+
+.visual {
+  position: relative;
   width: 100%;
+}
+
+.visual canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .header h1 {
@@ -332,7 +344,7 @@ body {
 
 .section:nth-child(even) .visual {
   margin-right: 30px;
-  width: 60%;
+  width: 70%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -402,7 +414,7 @@ h3 {
 .chair-price {
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 14px;
   align-items: center;
 }
 
@@ -446,7 +458,7 @@ h3 {
 }
 
 .visual {
-  width: 40%;
+  width: 60%;
   padding-left: 2%;
 }
 
@@ -577,6 +589,11 @@ h3 {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
 }
+.grid-4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
 
 /* Testimonial */
 
@@ -590,7 +607,7 @@ h3 {
   grid-column: 2 / -1;
   align-self: center;
   border-radius: 12px;
-  background-color: #165f56;
+  background-color: #165f57;
   padding: 30px;
 }
 
@@ -604,7 +621,39 @@ h3 {
   margin-bottom: 24px;
   font-size: 16px;
   line-height: 1.7;
-  color: #c3fae8;
+  color: hsl(160, 85%, 87%);
+}
+
+/* End Testimonial */
+
+/* Testimonial-2 */
+
+.testimonial-section-2 {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  padding: 24px;
+}
+
+.testimonial-box-2 {
+  grid-column: 2 / -1;
+  align-self: center;
+  border-radius: 12px;
+  background-color: #165f57;
+  padding: 20px;
+  margin-left: 5%;
+}
+
+.testimonial-box-2 h2 {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.testimonial-text-2 {
+  font-style: italic;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: hsl(160, 85%, 87%);
 }
 
 /* End Testimonial */
@@ -751,8 +800,9 @@ h3 {
 
   /* Image size adjustment */
   .visual img {
-    width: 70%;
-    margin-bottom: 30px;
+    width: auto;
+    height: 30%;
+    margin-bottom: 20px;
   }
 }
 
@@ -788,4 +838,94 @@ h3 {
   .btn {
     font-size: 16px;
   }
+}
+
+/*  */
+.app {
+  /* background: black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  border-radius: 20px;
+}
+
+.slider-container {
+  width: 100vw;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  flex: 0 0 50vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.product-title {
+  text-align: center;
+  padding: 10px;
+}
+
+.product-title span {
+  color: #29a396;
+}
+
+/* VIDEO */
+/* Container for the video */
+#video-container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+/* }
+
+/* Video element */
+#my-video {
+  width: 100%;
+  height: auto;
+  margin-left: 10%;
+  /* Removes any extra space below the video */
+}
+
+/* Video controls */
+#my-video::-webkit-media-controls {
+  color: #fff; /* Change the color of the controls */
+}
+
+/* Subtitles */
+video::cue {
+  background: rgba(0, 0, 0, 0.8); /* Background color for subtitles */
+  color: #fff; /* Text color for subtitles */
+  font-size: 16px; /* Font size for subtitles */
+  text-shadow: 1px 1px 2px #000; /* Text shadow for better readability */
+}
+
+/* End Video */
+
+#video-title {
+  margin-bottom: 21px;
+  margin-top: 10px;
 }

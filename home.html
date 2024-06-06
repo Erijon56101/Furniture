@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="/css/">
+  
     <title>Furniture Shop</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.8/pixi.min.js"></script>
+
   </head>
   <body>
     <!-- Menu -->
@@ -52,7 +56,7 @@
         </div>
 
         <div class="visual">
-          <img src="assets/pexels-julie-aagaard-1374125.jpg" alt="Furniture" />
+          <img src="assets/pexels-julie-aagaard-1374125.jpg" class="app" alt="Furniture" />
         </div>
       </div>
     </header>
@@ -419,6 +423,41 @@
           <section>
       </div>
       <!-- End Products -->
+
+         <!-- Testimonial -->
+         <h2 class="product-title " id="video-title">Our  <span>Furniture</span>  </h2>
+    <div class="section testimonial-section-2" id="testimonial">
+      <div class="container flex">
+        <div class="testimonial-box-2">
+          <h2>"Discover Elegance with Furniture"</h2>
+          <blockquote class="testimonial-text-2">
+            Our exquisite furniture collections blend style, comfort, and quality to transform your home into a haven. 
+            Discover your dream space today!
+          </blockquote>
+          <p class="testimonial-author-2">&mdash; Erijon and Ditjon</p>
+        </div>
+        <!-- <div class="visual">
+          <img
+            src="assets/pexels-antoni-shkraba-7579303.jpg"
+            alt="people sitting and talking"
+          />
+        </div> -->
+
+          <!-- End video --> 
+
+
+        <div id="video-container visual">
+          
+          <video id="my-video" controls autoplay muted>
+            <source src="assets/video.mp4" type="video/mp4">
+            <track src="titrat.vtt" kind="subtitles" srclang="en" label="English">
+          </video>
+        </div>
+  
+   <!-- End video -->
+      </div>
+    </div>
+    <!-- End Testimonial -->
        <!-- Support -->
     <div class="section" id="support">
       <div class=" support-box grid-3-cols">
@@ -456,6 +495,7 @@
               </div>
             </div>
               </div>
+              
 
       </div>
     </div>
@@ -471,5 +511,44 @@
     </footer>
 
     <!-- End Footer -->
+   <script src="home.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.2.1/pixi.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+ 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.2.0/pixi.min.js"></script>
+   <script>
+    // Krijoni një objekt Audio
+    const audio = new Audio('assets/video.mp3');
+  
+    // Për të filluar audio automatikisht
+    audio.autoplay = true;
+  
+    // Për të riprodhuar audio në loop
+    audio.loop = true;
+  
+    // Për të shtuar kontrollin e audio në dokument
+    document.body.appendChild(audio);
+  
+    // Krijoni një skenë Pixi.js
+    const app = new PIXI.Application({
+      width: 800,
+      height: 600,
+      transparent: true,
+      autoDensity: true,
+      resolution: devicePixelRatio,
+    });
+    document.body.appendChild(app.view);
+  
+    // Krijoni një video sprite
+    const videoSprite = PIXI.Sprite.from('assets/video.mp4');
+  
+    // Shtoni video sprite në skenë
+    app.stage.addChild(videoSprite);
+  
+    // Vendosni pozicionin dhe madhësinë e videove
+    videoSprite.position.set(0, 0);
+    videoSprite.width = app.screen.width;
+    videoSprite.height = app.screen.height;
+  </script>
   </body>
 </html>

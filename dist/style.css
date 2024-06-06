@@ -61,6 +61,7 @@ strong {
   font-weight: 700;
   letter-spacing: -0.015em;
   margin-bottom: 1.75rem;
+  padding-top: 3rem;
 }
 
 .text-gradient {
@@ -82,11 +83,14 @@ strong {
 }
 
 .overlay__btns {
-  width: 100%;
-  max-width: 30rem;
+  width: 90%;
+  max-width: 50rem;
+  height: 80%;
   display: flex;
-  padding-left: 9.2rem;
-  font-size: 2rem;
+  padding-left: 4rem;
+  font-size: 4rem;
+  /* padding-top: 1rem; */
+  padding-bottom: 2rem;
 }
 
 .overlay__btn {
@@ -126,4 +130,18 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.text {
+  color: white;
+}
+
+.register {
+  background-color: hsl(166, 66%, 33%);
+}
+
+.description {
+  padding-top: 3rem;
+  color: aliceblue;
+  font-size: 1.1rem;
 }
