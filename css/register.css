@@ -1,216 +1,152 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap");
 
-* {
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
+:root {
+  --clr-primary: #29a396;
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
 }
 
-h2 {
-    margin-top: 16px;
-    margin-bottom: 64px;
-    font-size: 36px;
-    letter-spacing: -0.5px;
-    text-align: center;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9fafb;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background: radial-gradient(rgba(17, 17, 17, 0.885), #071a1a);
 }
 
 .container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Aligns items to the left */
-    padding: 20px;
-    padding-bottom: 60px;
-    background: radial-gradient(rgba(17, 17, 17, 0.885), #071a1a);
-    flex-direction: column; /* Stacks items vertically */
+  position: relative; /* Added this */
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  width: 400px;
+}
+.container,
+.form {
+  background: url(https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/blur-1.png);
 }
 
-.container .form {
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-    background: #333;
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
-}
-
-.container .form h2 {
-    font-size: 30px;
-    color: #f8f4f4;
-    margin-bottom: 20px;
-}
-
-.container .form h2 span {
-    background: #165f56;
-    color: #f8f4f4;
-    border-radius: 5px;
-    padding: 0 15px;
-}
-
-.container .form .form-control {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.container .form .form-control label {
-    font-size: 18px;
-    color: #f8f4f4;
-}
-
-.container .form .form-control input {
-    width: 100%;
-    padding: 10px 15px;
-    font-size: 17px;
-    margin: 8px 0;
-    background: #333;
-    border: 2px solid #29a396;
-    border-radius: 5px;
-    color: #f8f4f4;
-}
-
-.container .form .form-control input::placeholder {
-    color: #bbb;
-}
-
-.container .form .form-control small {
-    color: #f8f4f4;
-    font-size: 16px;
-    display: none;
-}
-
-.container .form .form-control.error input {
-    border-color: #ff3860;
-}
-
-.container .form .form-control.error small {
-    color: #ff3860;
-    display: block;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap");
-
-* {
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
+.form {
+  padding: 30px 40px;
 }
 
 h2 {
-    margin-top: 16px;
-    margin-bottom: 64px;
-    font-size: 36px;
-    letter-spacing: -0.5px;
-    text-align: center;
+  text-align: center;
+  margin: 0 0 20px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bolder;
 }
 
-.container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
-    padding-bottom: 60px;
-    background: radial-gradient(rgba(17, 17, 17, 0.885), #071a1a);
-    flex-direction: column;
+h2 span {
+  color: #29a396;
 }
 
-.container .form {
-    padding: 20px;
-    border-radius: 15px; /* Adjust border-radius to your preference */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-    background: #333;
-    text-align: center;
-    width: 100%;
-    max-width: 500px;
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
 }
 
-.container .form h2 {
-    font-size: 30px;
-    color: #f8f4f4;
-    margin-bottom: 20px;
+.form-control label {
+  color: #29a396;
+  display: block;
+  margin-bottom: 5px;
 }
 
-.container .form h2 span {
-    background: #165f56;
-    color: #f8f4f4;
-    border-radius: 5px;
-    padding: 0 15px;
+.form-control input {
+  border: 2px solid #29a396;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
 }
 
-.container .form .form-control {
-    margin-bottom: 20px;
-    text-align: left;
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
 }
 
-.container .form .form-control label {
-    font-size: 18px;
-    color: #f8f4f4;
+.form-control.success input {
+  border-color: var(--success-color);
 }
 
-.container .form .form-control input {
-    width: 100%;
-    padding: 10px 15px;
-    font-size: 17px;
-    margin: 8px 0;
-    background: #333;
-    border: 2px solid #29a396;
-    border-radius: 15px; /* Rounded corners */
-    color: #f8f4f4;
+.form-control.error input {
+  border-color: var(--error-color);
 }
 
-.container .form .form-control input::placeholder {
-    color: #bbb;
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
 }
 
-.container .form .form-control small {
-    color: #f8f4f4;
-    font-size: 16px;
-    display: none;
+.form-control.error small {
+  visibility: visible;
 }
 
-.container .form .form-control.error input {
-    border-color: #ff3860;
+.form button {
+  cursor: pointer;
+  background-color: var(--clr-primary);
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 80%;
+  border-radius: 100px;
+  justify-content: center;
+  margin-left: 10%;
 }
 
-.container .form .form-control.error small {
-    color: #ff3860;
-    display: block;
+.form-txt {
+  background-color: #cae9e5;
 }
 
-.container .form .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 20px;
-    background: #165f56;
-    color: #fff;
-    margin: 10px 0;
-    text-transform: capitalize;
-    cursor: pointer;
-    border: none;
-    border-radius: 15px; /* Rounded corners */
-    transition: background 0.3s;
+.btn:hover {
+  background: #165f56;
+  transition: 0.3s linear;
 }
 
-.container  .btn:hover {
-    background:  #165f56;
+.btn-h {
+  position: absolute; /* Added this */
+  top: 0; /* Added this */
+  left: 0; /* Added this */
+  padding: 10px;
+  margin: 30px; /* Adjusted to add some spacing */
+  font-size: 12px;
+  background-color: #29a396;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 100px;
 }
 
-.container .btn-h {
-    background:#29a396;
-    color: #f8f4f4;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-bottom: 20px;
-    border-radius: 15px; /* Rounded corners */
-    padding: 10px 30px;
+.btn:link,
+.btn:visited {
+  background-color: #29a396;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 100px;
 }
-
+.btn:active,
+.btn:hover {
+  background-color: #165f56;
+}
