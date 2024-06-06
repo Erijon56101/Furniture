@@ -7,7 +7,8 @@ body {
 .slider-container {
   width: 100vw;
   overflow: hidden;
-  margin-bottom: 50px;  
+ padding-bottom: 10px;  
+
 }
 
 .slider {
@@ -26,7 +27,7 @@ body {
 
 .slide-img {
   max-height: 100%;
-  max-width: 100%;
+  max-width: 80%;
   object-fit: cover;  
 }
 
@@ -37,42 +38,14 @@ canvas {
   z-index: -1;
 }
 
-.product-title {
+.slider-title{
   text-align: center;
-  padding: 10px;
+  padding-top: 50px;
+  font-size: 40px;
+  padding-bottom: 15px;
 }
 
-.product-title span {
+.slider-title span {
   color: #29a396;
 }
 
-/* Container for the video */
-#video-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px; /* Set max width for the video */
-  margin: auto; /* Center the video container */
-  margin-bottom: 40px;
-
-}
-
-/* Video element */
-#my-video {
-  width: 100%;
-  height: auto;
-  display: block; /* Removes any extra space below the video */
-}
-
-/* Video controls */
-#my-video::-webkit-media-controls {
-  color: #fff; /* Change the color of the controls */
- 
-}
-
-/* Subtitles */
-video::cue {
-  background: rgba(0, 0, 0, 0.8); /* Background color for subtitles */
-  color: #fff; /* Text color for subtitles */
-  font-size: 16px; /* Font size for subtitles */
-  text-shadow: 1px 1px 2px #000; /* Text shadow for better readability */
-}
