@@ -7,8 +7,7 @@ body {
 .slider-container {
   width: 100vw;
   overflow: hidden;
- padding-bottom: 10px;  
-
+  margin-bottom: 50px;  
 }
 
 .slider {
@@ -27,7 +26,7 @@ body {
 
 .slide-img {
   max-height: 100%;
-  max-width: 80%;
+  max-width: 100%;
   object-fit: cover;  
 }
 
@@ -40,9 +39,8 @@ canvas {
 
 .slider-title{
   text-align: center;
-  padding-top: 50px;
+  padding: 50px;
   font-size: 40px;
-  padding-bottom: 15px;
 }
 
 .slider-title span {

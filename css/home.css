@@ -639,12 +639,12 @@ h3 {
   align-self: center;
   border-radius: 12px;
   background-color: #165f57;
-  padding: 30px;
-  margin-left: 10%;
+  padding: 20px;
+  margin-left: 5%;
 }
 
 .testimonial-box-2 h2 {
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   font-size: 24px;
 }
 
@@ -904,7 +904,7 @@ canvas {
 
 /* Video element */
 #my-video {
-  width: 90%;
+  width: 100%;
   height: auto;
   margin-left: 10%;
   /* Removes any extra space below the video */
@@ -926,6 +926,6 @@ video::cue {
 /* End Video */
 
 #video-title {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   margin-top: 10px;
 }
