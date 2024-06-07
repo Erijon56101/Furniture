@@ -661,6 +661,8 @@ h3 {
 /* Support */
 #support {
   padding: 40px 0;
+  padding-left: 8%;
+  background: url(https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/blur-1.png);
 }
 .support-box {
   margin-top: 30px;

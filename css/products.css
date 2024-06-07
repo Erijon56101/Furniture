@@ -16,7 +16,6 @@ body {
   background: radial-gradient(#111, #071a1a);
   color: #fff;
   overflow-x: hidden;
-  /* background: url(https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/blur-1.png); */
 }
 
 /* HEADER */
@@ -38,6 +37,7 @@ h2 {
   /* 24 / 30 / 36 */
   letter-spacing: -0.5px;
   text-align: center;
+  background: url(https://raw.githubusercontent.com/programmercloud/pgc-gym/main/img/blur-1.png);
 }
 
 .grid-3-cols {
