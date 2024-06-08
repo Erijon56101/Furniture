@@ -21,12 +21,12 @@
       <!-- Buttons -->
       <div class="overlay__btns">
         <button class="overlay__btn overlay__btn--transparent">
-          <a href="/home.html">
+          <a href="/Furniture/home.php">
             <label for="image-upload" class="text">Go to Home</label>
           </a>
         </button>
         <button class="overlay__btn overlay__btn--transparent register">
-          <a href="/register.html">
+          <a href="/Furniture/register_form.php ">
             <label for="image-upload" class="text">Register</label>
           </a>
         </button>
@@ -45,7 +45,7 @@
       </div>
     </div>
     <!-- Audio element -->
-    <audio id="welcome-audio" src="/assets/audio.mp3" preload="auto"></audio>
+    <audio id="welcome-audio" src="/Furniture/assets/audio.mp3" preload="auto"></audio>
 
     <!-- partial -->
     <script type="module" src="./script.js"></script>

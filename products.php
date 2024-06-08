@@ -16,7 +16,7 @@
           <ion-icon name="grid"></ion-icon>
         </div>
 
-        <a href="home.html" class="btn btn-h">Back to Home</a>
+        <a href="home.php" class="btn btn-h">Back to Home</a>
       </div>
     </div>
     <!-- End Menu -->

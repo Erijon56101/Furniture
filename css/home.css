@@ -931,3 +931,14 @@ video::cue {
   margin-bottom: 21px;
   margin-top: 10px;
 }
+
+.slider-title {
+  text-align: center;
+  padding: 50px;
+  font-size: 34px;
+}
+
+.slider-title span {
+  color: #29a396;
+}
+

@@ -37,12 +37,3 @@ canvas {
   z-index: -1;
 }
 
-.slider-title {
-  text-align: center;
-  padding: 50px;
-  font-size: 34px;
-}
-
-.slider-title span {
-  color: #29a396;
-}

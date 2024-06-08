@@ -1,3 +1,6 @@
+<?php
+include 'config.php';
+?>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -5,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="/css/app.css">
+  <link rel="stylesheet" href="css/app.css">
   
     <title>Furniture Shop</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.8/pixi.min.js"></script>
@@ -31,7 +34,7 @@
           <li class="nav-item"><a href="#support">Support</a></li>
         </ul>
 
-        <a href="register.html" class="btn">Register</a>
+        <a href="register_form.php" class="btn">Register</a>
       </div>
     </div>
     <!-- End Menu -->
@@ -52,7 +55,7 @@
             beauty and comfort, that will have a lasting impact on your health.
           </p>
 
-          <a href="products.html" class="btn mt">Shop Now</a>
+          <a href="products.php" class="btn mt">Shop Now</a>
         </div>
 
         <div class="visual">
@@ -460,12 +463,9 @@
       </div>
     </div>
     <!-- End Testimonial -->
-
-
-
 <!-- Products -->
 <div id="products">
-  <h2 class="slider-title" id="slider-title">Comfort and <span>Quality</span> </h2>
+<h2 class="slider-title" id="slider-title">Comfort and <span>Quality</span></h2>
   <div class="slider-container">
       <div class="slider">
           <div class="slide"><img class="slide-img" src="assets/furniture-05.jpg" alt="Chair 1" loading="lazy"></div>
