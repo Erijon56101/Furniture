@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to our furniture store. Experience the perfect blend of beauty and comfort with our meticulously crafted chairs. Join us for a journey of timeless elegance and sustainability." />
     <title>Welcome Page</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -26,7 +28,7 @@
           </a>
         </button>
         <button class="overlay__btn overlay__btn--transparent register">
-          <a href="/Furniture/register_form.php ">
+          <a href="/Furniture/register_form.php">
             <label for="image-upload" class="text">Register</label>
           </a>
         </button>

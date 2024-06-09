@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;700&display=swap");
 
 :root {
     --red: #c0392b;
@@ -11,6 +11,7 @@
     --border: .1rem solid var(--black);
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
     --main-color: #29a396; /* New color */
+    --bone: #E3DAC9; /* Bone color */
 }
 
 /* General Styles */
@@ -23,6 +24,7 @@
     border: none;
     text-decoration: none;
     transition: all .2s linear;
+    background: radial-gradient(#111, #071a1a);
 }
 
 *::selection {
@@ -49,7 +51,8 @@ html {
 }
 
 body {
-    background-color: var(--light-bg);
+    background-color: var(--bone); /* Bone background color */
+    color: var(--black); /* Default text color */
 }
 
 section {
@@ -71,7 +74,7 @@ section {
     top: 0;
     margin: 0 auto;
     max-width: 1200px;
-    background-color: var(--light-bg);
+    background-color: var(--bone); /* Bone background color */
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -141,7 +144,8 @@ section {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: var(--white);
+    background-color: var(--black); /* Updated to black */
+    color: var(--white); /* Updated to white text */
     box-shadow: var(--box-shadow);
 }
 
@@ -157,7 +161,7 @@ section {
 
 .header .flex .logo {
     font-size: 2.5rem;
-    color: var(--black);
+    color: var(--white); /* Updated to white */
 }
 
 .header .flex .logo span {
@@ -167,7 +171,7 @@ section {
 .header .flex .navbar a {
     margin: 0 1rem;
     font-size: 2rem;
-    color: var(--black);
+    color: var(--white); /* Updated to white */
 }
 
 .header .flex .navbar a:hover {
@@ -178,7 +182,7 @@ section {
     margin-left: 1.5rem;
     font-size: 2.5rem;
     cursor: pointer;
-    color: var(--black);
+    color: var(--white); /* Updated to white */
 }
 
 .header .flex .icons div:hover {
@@ -235,9 +239,10 @@ section {
 #menu-btn {
     display: none;
 }
-#user:hover{
-    color: #29a396;
+#user:hover {
+    color: var(--main-color);
 }
+
 /* Dashboard */
 .dashboard .box-container {
     display: grid;
@@ -301,7 +306,7 @@ section {
         top: 99%;
         left: 0;
         right: 0;
-        background-color: var(--white);
+        background-color: var(--black); /* Updated to black */
         border-top: var(--border);
         border-bottom: var(--border);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);

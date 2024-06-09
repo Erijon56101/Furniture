@@ -6,9 +6,10 @@ include 'config.php';
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to our Furniture Shop. We design and build better furniture for a better life. Shop our bestselling chairs and discover comfort and style." />
 
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/app.css">
   
     <title>Furniture Shop</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.8/pixi.min.js"></script>

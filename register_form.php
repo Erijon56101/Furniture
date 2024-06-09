@@ -10,27 +10,22 @@ if(isset($_POST['submit'])){
    $cpass = md5($_POST['cpassword']);
    $user_type = $_POST['user_type'];
 
-   $select = " SELECT * FROM user_form WHERE email = '$email' && password = '$pass' ";
+   $select = "SELECT * FROM furniture_form WHERE email = '$email' && password = '$pass' ";
 
    $result = mysqli_query($conn, $select);
 
    if(mysqli_num_rows($result) > 0){
-
       $error[] = 'user already exist!';
-
-   }else{
-
+   } else {
       if($pass != $cpass){
          $error[] = 'password not matched!';
-      }else{
-         $insert = "INSERT INTO user_form(name, email, password, user_type) VALUES('$name','$email','$pass','$user_type')";
+      } else {
+         $insert = "INSERT INTO furniture_form(name, email, password, user_type) VALUES('$name','$email','$pass','$user_type')";
          mysqli_query($conn, $insert);
          header('location:login_form.php');
       }
    }
-
 };
-
 
 ?>
 
@@ -40,11 +35,12 @@ if(isset($_POST['submit'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Register to create an account on the furniture system and gain access to user or admin functionalities.">
    <link rel="icon" href="images/sofa.png" type="image/x-icon">
    <title>Register</title>
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style5.css">
+   <link rel="stylesheet" href="css/form.css">
 
 </head>
 <body>

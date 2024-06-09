@@ -15,11 +15,10 @@ if(isset($message)){
 
    <div class="flex">
 
-      <a href="admin_page.php" class="logo">Admin<span>Panel</span></a>
+      <a href="admin_page.php" class="logo">Admin<span style="color:#29a396;;">Panel</span></a>
 
-      <nav class="navbar">
-      
-         <a href="dashboard.php">user</a>
+      <nav class="navbar">  
+         <a href="dashboard.php" style =" color: #29a396; " >user</a>
       </nav>
 
       <div class="icons">
@@ -28,8 +27,8 @@ if(isset($message)){
       </div>
 
       <div class="account-box">
-         <p>username : <span><?php echo $_SESSION['admin_name']; ?></span></p>
-         <p>email : <span><?php echo $_SESSION['admin_email']; ?></span></p>
+         <p>username : <span style="color:#29a396;;"><?php echo $_SESSION['admin_name']; ?></span></p>
+         <p>email : <span style="color:#29a396;;"><?php echo $_SESSION['admin_email']; ?></span></p>
          <a href="logout.php" class="delete-btn">logout</a>
       </div>
 
