@@ -1,6 +1,6 @@
 <?php   
 @include 'config.php';
-$query = "SELECT * FROM furniture_form WHERE user_type = 'user'";
+$query = "SELECT * FROM user_form WHERE user_type = 'user'";
 $run = mysqli_query($conn, $query);
 ?>  
 <!DOCTYPE html>  
@@ -10,7 +10,7 @@ $run = mysqli_query($conn, $query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/sofa.png" type="image/x-icon">
    <title>Dashboard</title>
-    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/Dashboard1.css" />
 </head>  
 <body>  
     <div class="container">

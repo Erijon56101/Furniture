@@ -25,7 +25,7 @@ if(!isset($admin_id)){
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
    <!-- custom admin css file link  -->
-   <link rel="stylesheet" href="css/admin.css">
+   <link rel="stylesheet" href="css/admin_style1.css">
 
 </head>
 <body>
@@ -42,32 +42,37 @@ if(!isset($admin_id)){
 
       <div class="box">
          <?php 
-            $select_users = mysqli_query($conn, "SELECT * FROM `furniture_form` WHERE user_type = 'user'") or die('query failed');
+            $select_users = mysqli_query($conn, "SELECT * FROM `user_form` WHERE user_type = 'user'") or die('query failed');
             $number_of_users = mysqli_num_rows($select_users);
          ?>
          <h3><?php echo $number_of_users; ?></h3>
-         <p style="color: #29a396;;">normal users</p>
+         <p>normal users</p>
       </div>
 
       <div class="box">
          <?php 
-            $select_admins = mysqli_query($conn, "SELECT * FROM `furniture_form` WHERE user_type = 'admin'") or die('query failed');
+            $select_admins = mysqli_query($conn, "SELECT * FROM `user_form` WHERE user_type = 'admin'") or die('query failed');
             $number_of_admins = mysqli_num_rows($select_admins);
          ?>
          <h3><?php echo $number_of_admins; ?></h3>
-         <p style="color: #29a396;;">admin users</p>
-
+         <p>admin users</p>
       </div>
 
       <div class="box">
          <?php 
-            $select_account = mysqli_query($conn, "SELECT * FROM `furniture_form`") or die('query failed');
+            $select_account = mysqli_query($conn, "SELECT * FROM `user_form`") or die('query failed');
             $number_of_account = mysqli_num_rows($select_account);
          ?>
          <h3><?php echo $number_of_account; ?></h3>
-         <p style="color: #29a396;">total accounts</p>
+         <p>total accounts</p>
       </div>
+
+      
+   
 </section>
+
+
 <script src="js/admin_script.js"></script>
+
 </body>
 </html>
